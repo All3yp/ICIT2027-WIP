@@ -68,6 +68,16 @@ JSON API, downloads it into `artifacts/`, and aborts if its SHA-256 differs from
 the pinned value. `lab/audit_release.py` recomputes the hash and prints a static
 (AST) description of the relevant `RNS/Link.py` routines.
 
+## Related implementations
+
+Independent ports of the same protocol, listed for context only; the harness in
+this repository runs and measures the Python reference implementation and does
+not use either port.
+
+- Reticulum-Go — a Go port targeting wire compatibility with RNS 1.5.7:
+  https://reticulum-go.quad4.io/docs/overview/
+- MicroPython Reticulum port: https://github.com/varna9000/micropython-reticulum
+
 ## Reproduce the results
 
 Each trial launches a fresh server+client process pair, writes one immutable
