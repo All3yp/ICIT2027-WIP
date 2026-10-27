@@ -38,9 +38,16 @@ This creates `.venv` and installs `rns==1.5.7` and the development dependency
 
 ## Pinned source (`artifacts/`)
 
-`artifacts/rns-1.5.7.tar.gz` is the official RNS 1.5.7 source distribution from
-PyPI. The harness does not unpack it; the runs import the installed `rns`
-package, and the archive is kept for provenance and static inspection.
+`artifacts/rns-1.5.7.tar.gz` is the official RNS 1.5.7 source distribution
+published on the Python Package Index. The harness does not unpack it; the runs
+import the installed `rns` package, and the archive is kept for provenance and
+static inspection.
+
+Where it comes from:
+
+- Upstream project: Reticulum Network Stack (`rns`), https://reticulum.network/
+- Release page: https://pypi.org/project/rns/1.5.7/ (uploaded 2026-10-05)
+- File: https://files.pythonhosted.org/packages/eb/62/ec929e1a614e0d9f5266f816d73a060eb6b0c89f6684e9ef0b7bedcac17d/rns-1.5.7.tar.gz
 
 Recorded digests:
 
@@ -56,9 +63,10 @@ sh scripts/fetch_source.sh
 uv run python lab/audit_release.py artifacts/rns-1.5.7.tar.gz
 ```
 
-`scripts/fetch_source.sh` downloads the sdist from PyPI and aborts if its SHA-256
-differs from the pinned value. `lab/audit_release.py` recomputes the hash and
-prints a static (AST) description of the relevant `RNS/Link.py` routines.
+`scripts/fetch_source.sh` resolves the sdist URL for `rns==1.5.7` from the PyPI
+JSON API, downloads it into `artifacts/`, and aborts if its SHA-256 differs from
+the pinned value. `lab/audit_release.py` recomputes the hash and prints a static
+(AST) description of the relevant `RNS/Link.py` routines.
 
 ## Reproduce the results
 
