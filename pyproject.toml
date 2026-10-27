@@ -1,0 +1,22 @@
+[project]
+name = "reticulum-link-establishment-lab"
+version = "0.1.0"
+description = "Loopback laboratory harness and dataset for the RNS 1.5.7 link-establishment measurement study (IEEE ICIT 2027 Work-in-Progress)."
+readme = "README.md"
+authors = [
+    { name = "Noyalle do Nascimento Pereira", email = "alleyp@ppget.ifce.edu.br" },
+    { name = "Joao Paolo Cavalcante Martins Oliveira", email = "paolo.oliveira.948@ufrn.edu.br" },
+    { name = "Lucas Teske", email = "lucas@teske.com.br" },
+]
+requires-python = ">=3.13"
+dependencies = [
+    "rns==1.5.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.uv]
+package = false

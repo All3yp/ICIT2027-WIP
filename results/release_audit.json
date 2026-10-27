@@ -1,0 +1,56 @@
+{
+  "version_target": "1.5.7",
+  "artifact": "artifacts/rns-1.5.7.tar.gz",
+  "sha256_observed": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+  "sha256_expected_pypi": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+  "hash_verified": true,
+  "notes": "Static AST heuristics only, not a vulnerability finding or execution result",
+  "link_py_path": "rns-1.5.7/RNS/Link.py",
+  "link_py_sha256": "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263",
+  "routines": {
+    "rtt_packet": {
+      "present": true,
+      "first_line": 516,
+      "last_line": 538,
+      "uses_LRRTT": false,
+      "mentions_HANDSHAKE": false,
+      "mentions_ACTIVE": true,
+      "mentions_link_established": true,
+      "calls_rtt_packet": true,
+      "calls_start_watchdog": false
+    },
+    "__receive": {
+      "present": true,
+      "first_line": 937,
+      "last_line": 1164,
+      "uses_LRRTT": true,
+      "mentions_HANDSHAKE": false,
+      "mentions_ACTIVE": true,
+      "mentions_link_established": false,
+      "calls_rtt_packet": true,
+      "calls_start_watchdog": false
+    },
+    "validate_request": {
+      "present": true,
+      "first_line": 186,
+      "last_line": 227,
+      "uses_LRRTT": false,
+      "mentions_HANDSHAKE": false,
+      "mentions_ACTIVE": false,
+      "mentions_link_established": false,
+      "calls_rtt_packet": false,
+      "calls_start_watchdog": true
+    },
+    "start_watchdog": {
+      "present": true,
+      "first_line": 707,
+      "last_line": 710,
+      "uses_LRRTT": false,
+      "mentions_HANDSHAKE": false,
+      "mentions_ACTIVE": false,
+      "mentions_link_established": false,
+      "calls_rtt_packet": false,
+      "calls_start_watchdog": true
+    }
+  }
+}

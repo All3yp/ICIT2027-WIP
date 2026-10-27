@@ -1,0 +1,1728 @@
+{
+  "trials_dir": "results/trials",
+  "manifests_seen": 165,
+  "manifests_ok": 159,
+  "excluded_non_ok": [
+    "T2bad:CLIENT_FAILED",
+    "T2smoke:SERVER_NOT_READY"
+  ],
+  "E1": {
+    "E1nc": {
+      "description": "non-idempotent handler, single notification",
+      "n": 5,
+      "callbacks_per_link": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sessions_created": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "invariant_violations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "redundant_calls": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "E1np": {
+      "description": "non-idempotent handler, duplicate notification",
+      "n": 5,
+      "callbacks_per_link": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sessions_created": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "invariant_violations": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "redundant_calls": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "E1ic": {
+      "description": "idempotent handler, single notification",
+      "n": 5,
+      "callbacks_per_link": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sessions_created": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "invariant_violations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "redundant_calls": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "E1ip": {
+      "description": "idempotent handler, duplicate notification",
+      "n": 5,
+      "callbacks_per_link": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sessions_created": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "invariant_violations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "redundant_calls": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "E2": {
+    "E2base": {
+      "description": "no probe (default timers)",
+      "n": 3,
+      "window_seconds": 40.0,
+      "reached_stale": 3,
+      "time_to_stale_seconds": [
+        15.007,
+        15.006,
+        15.018
+      ],
+      "time_to_stale_median": 15.007,
+      "time_to_closed_seconds": [
+        20.012,
+        20.009,
+        20.02
+      ],
+      "timers_after_probe": [
+        {
+          "rtt": 0.001201,
+          "keepalive": 5,
+          "stale_time": 10
+        },
+        {
+          "rtt": 0.001634,
+          "keepalive": 5,
+          "stale_time": 10
+        },
+        {
+          "rtt": 0.001279,
+          "keepalive": 5,
+          "stale_time": 10
+        }
+      ],
+      "teardown_names": [
+        "TIMEOUT"
+      ],
+      "rejected_extra_lrrtt": [
+        0,
+        0,
+        0
+      ]
+    },
+    "E2mid": {
+      "description": "probe supplying rtt = 0.075 s",
+      "n": 3,
+      "window_seconds": 45.0,
+      "reached_stale": 3,
+      "time_to_stale_seconds": [
+        35.512,
+        35.514,
+        35.512
+      ],
+      "time_to_stale_median": 35.512,
+      "time_to_closed_seconds": [
+        40.513,
+        40.515,
+        40.514
+      ],
+      "timers_after_probe": [
+        {
+          "rtt": 0.075,
+          "keepalive": 15.429,
+          "stale_time": 30.857
+        },
+        {
+          "rtt": 0.075,
+          "keepalive": 15.429,
+          "stale_time": 30.857
+        },
+        {
+          "rtt": 0.075,
+          "keepalive": 15.429,
+          "stale_time": 30.857
+        }
+      ],
+      "teardown_names": [
+        "TIMEOUT"
+      ],
+      "rejected_extra_lrrtt": [
+        0,
+        0,
+        0
+      ]
+    },
+    "E2huge": {
+      "description": "probe supplying rtt = 2.0 s",
+      "n": 3,
+      "window_seconds": 45.0,
+      "reached_stale": 0,
+      "time_to_stale_seconds": [],
+      "time_to_stale_median": null,
+      "time_to_closed_seconds": [],
+      "timers_after_probe": [
+        {
+          "rtt": 2.0,
+          "keepalive": 360,
+          "stale_time": 720
+        },
+        {
+          "rtt": 2.0,
+          "keepalive": 360,
+          "stale_time": 720
+        },
+        {
+          "rtt": 2.0,
+          "keepalive": 360,
+          "stale_time": 720
+        }
+      ],
+      "teardown_names": [
+        "INITIATOR_CLOSED"
+      ],
+      "rejected_extra_lrrtt": [
+        0,
+        0,
+        0
+      ]
+    },
+    "E2guard": {
+      "description": "probe supplying rtt = 0.075 s, guarded responder",
+      "n": 3,
+      "window_seconds": 45.0,
+      "reached_stale": 3,
+      "time_to_stale_seconds": [
+        15.006,
+        15.005,
+        15.018
+      ],
+      "time_to_stale_median": 15.006,
+      "time_to_closed_seconds": [
+        20.007,
+        20.007,
+        20.022
+      ],
+      "timers_after_probe": [
+        {
+          "rtt": 0.001657,
+          "keepalive": 5,
+          "stale_time": 10
+        },
+        {
+          "rtt": 0.001126,
+          "keepalive": 5,
+          "stale_time": 10
+        },
+        {
+          "rtt": 0.001564,
+          "keepalive": 5,
+          "stale_time": 10
+        }
+      ],
+      "teardown_names": [
+        "TIMEOUT"
+      ],
+      "rejected_extra_lrrtt": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "E3": {
+    "dup": {
+      "unmodified": {
+        "trial": "E3dup",
+        "n": 3,
+        "callbacks_per_link": [
+          2,
+          2,
+          2
+        ],
+        "rejected_extra_lrrtt": [
+          0,
+          0,
+          0
+        ],
+        "client_active": [
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2
+        ],
+        "server_established_total": [
+          2,
+          2,
+          2
+        ],
+        "early_link_data": [],
+        "destination_link_series": [
+          null,
+          null,
+          null
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "dup",
+              "transmissions": 2,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "dup",
+              "transmissions": 2,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "dup",
+              "transmissions": 2,
+              "bytes": 83
+            }
+          ]
+        ]
+      },
+      "guarded": {
+        "trial": "E3duph",
+        "n": 3,
+        "callbacks_per_link": [
+          1,
+          1,
+          1
+        ],
+        "rejected_extra_lrrtt": [
+          1,
+          1,
+          1
+        ],
+        "client_active": [
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2
+        ],
+        "server_established_total": [
+          1,
+          1,
+          1
+        ],
+        "early_link_data": [],
+        "destination_link_series": [
+          null,
+          null,
+          null
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "dup",
+              "transmissions": 2,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "dup",
+              "transmissions": 2,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "dup",
+              "transmissions": 2,
+              "bytes": 83
+            }
+          ]
+        ]
+      }
+    },
+    "drop": {
+      "unmodified": {
+        "trial": "E3drop",
+        "n": 9,
+        "callbacks_per_link": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejected_extra_lrrtt": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "client_active": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          2
+        ],
+        "server_established_total": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "early_link_data": [],
+        "destination_link_series": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            []
+          ]
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ]
+        ]
+      },
+      "guarded": {
+        "trial": "E3droph",
+        "n": 9,
+        "callbacks_per_link": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejected_extra_lrrtt": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "client_active": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "server_established_total": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "early_link_data": [],
+        "destination_link_series": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "HANDSHAKE"
+            ],
+            []
+          ]
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "drop",
+              "dropped_bytes": 83
+            }
+          ]
+        ]
+      }
+    },
+    "delay": {
+      "unmodified": {
+        "trial": "E3delay",
+        "n": 3,
+        "callbacks_per_link": [
+          1,
+          1,
+          1
+        ],
+        "rejected_extra_lrrtt": [
+          0,
+          0,
+          0
+        ],
+        "client_active": [
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2
+        ],
+        "server_established_total": [
+          1,
+          1,
+          1
+        ],
+        "early_link_data": [],
+        "destination_link_series": [
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "ACTIVE"
+            ],
+            []
+          ]
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "delay",
+              "delayed_seconds": 2.0,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "delay",
+              "delayed_seconds": 2.0,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "delay",
+              "delayed_seconds": 2.0,
+              "bytes": 83
+            }
+          ]
+        ]
+      },
+      "guarded": {
+        "trial": "E3delayh",
+        "n": 3,
+        "callbacks_per_link": [
+          1,
+          1,
+          1
+        ],
+        "rejected_extra_lrrtt": [
+          0,
+          0,
+          0
+        ],
+        "client_active": [
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2
+        ],
+        "server_established_total": [
+          1,
+          1,
+          1
+        ],
+        "early_link_data": [],
+        "destination_link_series": [
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "HANDSHAKE"
+            ],
+            [
+              "ACTIVE"
+            ],
+            []
+          ]
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "delay",
+              "delayed_seconds": 2.0,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "delay",
+              "delayed_seconds": 2.0,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "delay",
+              "delayed_seconds": 2.0,
+              "bytes": 83
+            }
+          ]
+        ]
+      }
+    },
+    "reorder": {
+      "unmodified": {
+        "trial": "E3reorder",
+        "n": 6,
+        "callbacks_per_link": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rejected_extra_lrrtt": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "client_active": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "server_established_total": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "early_link_data": [
+          {
+            "status_name": "HANDSHAKE",
+            "bytes": 9,
+            "handler_registered_at": "link_construction"
+          },
+          {
+            "status_name": "HANDSHAKE",
+            "bytes": 9,
+            "handler_registered_at": "link_construction"
+          },
+          {
+            "status_name": "HANDSHAKE",
+            "bytes": 9,
+            "handler_registered_at": "link_construction"
+          }
+        ],
+        "destination_link_series": [
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ]
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ]
+        ]
+      },
+      "guarded": {
+        "trial": "E3reorderh",
+        "n": 6,
+        "callbacks_per_link": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rejected_extra_lrrtt": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "client_active": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "server_established_total": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "early_link_data": [
+          {
+            "status_name": "HANDSHAKE",
+            "bytes": 9,
+            "handler_registered_at": "link_construction"
+          },
+          {
+            "status_name": "HANDSHAKE",
+            "bytes": 9,
+            "handler_registered_at": "link_construction"
+          },
+          {
+            "status_name": "HANDSHAKE",
+            "bytes": 9,
+            "handler_registered_at": "link_construction"
+          }
+        ],
+        "destination_link_series": [
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ]
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "reorder",
+              "state": "holding",
+              "bytes": 83
+            },
+            {
+              "perturbation": "reorder",
+              "state": "released_after_followup",
+              "bytes": 83
+            }
+          ]
+        ]
+      }
+    },
+    "retransmit": {
+      "unmodified": {
+        "trial": "E3retx",
+        "n": 3,
+        "callbacks_per_link": [
+          1,
+          1,
+          1
+        ],
+        "rejected_extra_lrrtt": [
+          0,
+          0,
+          0
+        ],
+        "client_active": [
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2
+        ],
+        "server_established_total": [
+          1,
+          1,
+          1
+        ],
+        "early_link_data": [],
+        "destination_link_series": [
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ]
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "retransmit",
+              "transmissions": 2,
+              "identical_bytes": true,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "retransmit",
+              "transmissions": 2,
+              "identical_bytes": true,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "retransmit",
+              "transmissions": 2,
+              "identical_bytes": true,
+              "bytes": 83
+            }
+          ]
+        ]
+      },
+      "guarded": {
+        "trial": "E3retxh",
+        "n": 3,
+        "callbacks_per_link": [
+          1,
+          1,
+          1
+        ],
+        "rejected_extra_lrrtt": [
+          0,
+          0,
+          0
+        ],
+        "client_active": [
+          true,
+          true,
+          true
+        ],
+        "client_status_final": [
+          2,
+          2,
+          2
+        ],
+        "server_established_total": [
+          1,
+          1,
+          1
+        ],
+        "early_link_data": [],
+        "destination_link_series": [
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ],
+          [
+            [],
+            [
+              "ACTIVE"
+            ],
+            []
+          ]
+        ],
+        "perturbation_events": [
+          [
+            {
+              "perturbation": "retransmit",
+              "transmissions": 2,
+              "identical_bytes": true,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "retransmit",
+              "transmissions": 2,
+              "identical_bytes": true,
+              "bytes": 83
+            }
+          ],
+          [
+            {
+              "perturbation": "retransmit",
+              "transmissions": 2,
+              "identical_bytes": true,
+              "bytes": 83
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "state_rewrite": {
+    "T2i": {
+      "n": 5,
+      "rtt_first": [
+        0.001527,
+        0.001633,
+        0.002382,
+        0.001672,
+        0.001737
+      ],
+      "rtt_last": [
+        1.001955,
+        1.00223,
+        1.004104,
+        1.002454,
+        1.002159
+      ],
+      "keepalive_first": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "keepalive_last": [
+        206.116,
+        206.173,
+        206.558,
+        206.219,
+        206.158
+      ],
+      "stale_time_first": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "stale_time_last": [
+        412.233,
+        412.346,
+        413.117,
+        412.438,
+        412.317
+      ],
+      "rate_first": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "rate_last": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "expected_hops": [
+        1
+      ],
+      "activated_at_changed": 5
+    },
+    "T2infl": {
+      "n": 5,
+      "rtt_first": [
+        0.001561,
+        0.0015,
+        0.001983,
+        0.001629,
+        0.001697
+      ],
+      "rtt_last": [
+        1000000.0,
+        1000000.0,
+        1000000.0,
+        1000000.0,
+        1000000.0
+      ],
+      "keepalive_first": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "keepalive_last": [
+        360,
+        360,
+        360,
+        360,
+        360
+      ],
+      "stale_time_first": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "stale_time_last": [
+        720,
+        720,
+        720,
+        720,
+        720
+      ],
+      "rate_first": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "rate_last": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "expected_hops": [
+        1
+      ],
+      "activated_at_changed": 5
+    },
+    "E2mid": {
+      "n": 3,
+      "rtt_first": [
+        0.001152,
+        0.001084,
+        0.001213
+      ],
+      "rtt_last": [
+        0.075,
+        0.075,
+        0.075
+      ],
+      "keepalive_first": [
+        5,
+        5,
+        5
+      ],
+      "keepalive_last": [
+        15.429,
+        15.429,
+        15.429
+      ],
+      "stale_time_first": [
+        10,
+        10,
+        10
+      ],
+      "stale_time_last": [
+        30.857,
+        30.857,
+        30.857
+      ],
+      "rate_first": [
+        177114.058373,
+        188135.007916,
+        168200.907411
+      ],
+      "rate_last": [
+        2720.0,
+        2720.0,
+        2720.0
+      ],
+      "expected_hops": [
+        1
+      ],
+      "activated_at_changed": 3
+    },
+    "E2huge": {
+      "n": 3,
+      "rtt_first": [
+        0.001235,
+        0.000985,
+        0.001191
+      ],
+      "rtt_last": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "keepalive_first": [
+        5,
+        5,
+        5
+      ],
+      "keepalive_last": [
+        360,
+        360,
+        360
+      ],
+      "stale_time_first": [
+        10,
+        10,
+        10
+      ],
+      "stale_time_last": [
+        720,
+        720,
+        720
+      ],
+      "rate_first": [
+        165181.08417,
+        207126.123457,
+        171333.203044
+      ],
+      "rate_last": [
+        102.0,
+        102.0,
+        102.0
+      ],
+      "expected_hops": [
+        1
+      ],
+      "activated_at_changed": 3
+    }
+  },
+  "duplication_timing": {
+    "E3dup": {
+      "second_copy_delay_seconds": 0.0,
+      "n": 3,
+      "callbacks_per_link": [
+        2,
+        2,
+        2
+      ],
+      "identical_bytes": true,
+      "perturbation": [
+        {
+          "perturbation": "dup",
+          "transmissions": 2,
+          "bytes": 83
+        }
+      ]
+    },
+    "E3dup20ms": {
+      "second_copy_delay_seconds": 0.02,
+      "n": 3,
+      "callbacks_per_link": [
+        1,
+        1,
+        1
+      ],
+      "identical_bytes": true,
+      "perturbation": [
+        {
+          "perturbation": "dup",
+          "transmissions": 2,
+          "bytes": 83,
+          "identical_bytes": true,
+          "second_copy_delay_seconds": 0.02
+        }
+      ]
+    },
+    "E3retx": {
+      "second_copy_delay_seconds": 0.3,
+      "n": 3,
+      "callbacks_per_link": [
+        1,
+        1,
+        1
+      ],
+      "identical_bytes": true,
+      "perturbation": [
+        {
+          "perturbation": "retransmit",
+          "transmissions": 2,
+          "identical_bytes": true,
+          "bytes": 83
+        }
+      ]
+    }
+  }
+}

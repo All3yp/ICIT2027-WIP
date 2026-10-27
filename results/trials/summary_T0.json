@@ -1,0 +1,100 @@
+{
+  "trial_filter": "T0",
+  "runs": 6,
+  "statuses": [
+    "OK"
+  ],
+  "all_correlated_single_callback": true,
+  "rows": [
+    {
+      "run": "T0_20261021T045240Z_0f0c7583",
+      "status": "OK",
+      "client_active": null,
+      "client_cb": null,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "2d6c74a8ac79c11c1db0bfc8e8f306a0": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.294,
+      "probe_sent": false,
+      "failures": []
+    },
+    {
+      "run": "T0_20261021T045317Z_e83ad81d",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "d316658c012571ed88c481c270893eb0": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.761,
+      "probe_sent": false,
+      "failures": []
+    },
+    {
+      "run": "T0_20261021T045324Z_4a45441e",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "6d222c59a942f073079d99313ace8a95": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.297,
+      "probe_sent": false,
+      "failures": []
+    },
+    {
+      "run": "T0_20261021T045332Z_63af431e",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "04ef06d34f982f4216df12bf608ca7ea": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.265,
+      "probe_sent": false,
+      "failures": []
+    },
+    {
+      "run": "T0_20261021T045339Z_d0e81df5",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "aaead1424ea39b4d8d926fc0a734dd80": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.118,
+      "probe_sent": false,
+      "failures": []
+    },
+    {
+      "run": "T0_20261021T045347Z_c2a1c925",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "0dd0104dcf015f3d39e16869cff05c90": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.168,
+      "probe_sent": false,
+      "failures": []
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "trial": "T2bad",
+  "repeat_index": 3,
+  "run_dir": "results/trials/T2bad_20261021T185509Z_465586b7",
+  "port": 42648,
+  "started_utc": "2026-10-21T18:55:09.939471+00:00",
+  "probe_once": false,
+  "probe_mode": "corrupt",
+  "hardening": "off",
+  "fingerprints": {
+    "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+    "link_lab_sha256": "d2334ebf69fb576abeb5761dc4d0bd7c0b0789879d465ae8f4cc4152baecab0e",
+    "installed_link_py_sha256": "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263",
+    "server_config_sha256": "25d3ecc84255f25ae636b9655e78351438220f09e2cbd14e9b1acc59d8ebf38c",
+    "client_config_sha256": "b1c1761ad15fcf1cf71b62aeb1d9b203b328996e911b59c640a7f07876f9efaf"
+  },
+  "interpreter": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/.venv/bin/python",
+  "python": "3.13.16",
+  "host": "zephy",
+  "kernel": "6.18.55-2-cachyos-lts",
+  "server_ready": true,
+  "server_ready_seconds": 0.403,
+  "finished_utc": "2026-10-21T18:55:17.695073+00:00",
+  "status": "OK",
+  "client": {
+    "exit_code": 0,
+    "duration_seconds": 4.035
+  },
+  "server_termination": {
+    "exit_code": 0,
+    "terminated_signal": "SIGINT",
+    "hard_kill": false
+  },
+  "wall_seconds": 31.236,
+  "link_latency_seconds": 0.003358,
+  "server_run_ids": [
+    "d7542341-8505-4b57-bbe0-10a9190f47c9"
+  ],
+  "client_run_ids": [
+    "3a1bc761-c7b6-480d-a16a-be8cd4180557"
+  ],
+  "client_status_final": 2,
+  "client_callback_count": 1,
+  "client_active_confirmed": true,
+  "server_established_count": 1,
+  "server_callbacks_by_link": {
+    "069f20c431ca921991b18f260d6aa7c6": 1
+  },
+  "server_link_ids": [
+    "069f20c431ca921991b18f260d6aa7c6"
+  ],
+  "client_link_ids": [
+    "069f20c431ca921991b18f260d6aa7c6"
+  ],
+  "correlated_link_ids": [
+    "069f20c431ca921991b18f260d6aa7c6"
+  ],
+  "probe_sent": true,
+  "replay_injected": false,
+  "hardening_installed": false,
+  "hardening_rtt_rejected": 0,
+  "server_link_closed_events": 1,
+  "client_link_closed_events": 1,
+  "server_callback_states": [
+    {
+      "callback_number": 1,
+      "status": 2,
+      "rtt": 0.003096,
+      "expected_hops": 1,
+      "keepalive": 5,
+      "stale_time": 10,
+      "age_seconds": 4.1e-05
+    }
+  ],
+  "run_failed_events": []
+}

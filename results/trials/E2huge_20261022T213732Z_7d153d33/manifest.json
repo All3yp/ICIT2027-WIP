@@ -1,0 +1,172 @@
+{
+  "trial": "E2huge",
+  "repeat_index": 0,
+  "run_dir": "results/trials/E2huge_20261022T213732Z_7d153d33",
+  "port": 42910,
+  "started_utc": "2026-10-22T21:37:32.082624+00:00",
+  "probe_once": false,
+  "probe_mode": "fixed",
+  "hardening": "off",
+  "app_mode": "counting",
+  "observe_seconds": 45.0,
+  "pause_seconds": 47.0,
+  "perturb": "none",
+  "extra_rtt": 2.0,
+  "probe_delay": 0.02,
+  "data_packets": 0,
+  "no_teardown": true,
+  "fingerprints": {
+    "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+    "link_lab_sha256": "2c9590328d90850e9482e8f7109366f8e52ce398de5bcea99d5023f30a4fca0a",
+    "installed_link_py_sha256": "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263",
+    "server_config_sha256": "887687912d473fcce0cba333241763be28ef26db7019f017b6503575cf7a9d73",
+    "client_config_sha256": "3a654eae2169f7b5ac61ae45efa974c75b59819ccc5278c8b4e20a2aa2bb414e"
+  },
+  "interpreter": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/.venv/bin/python",
+  "python": "3.13.16",
+  "host": "zephy",
+  "kernel": "6.18.55-2-cachyos-lts",
+  "server_ready": true,
+  "server_ready_seconds": 0.201,
+  "finished_utc": "2026-10-22T21:38:23.645197+00:00",
+  "status": "OK",
+  "client": {
+    "exit_code": 0,
+    "pause_seconds": 47.0,
+    "paused": true,
+    "duration_seconds": 47.997
+  },
+  "server_termination": {
+    "exit_code": 0,
+    "terminated_signal": "SIGINT",
+    "hard_kill": false
+  },
+  "wall_seconds": 51.563,
+  "link_latency_seconds": 0.001258,
+  "server_run_ids": [
+    "cd743b7a-b2a0-4b70-8fe9-be991ee57a9d"
+  ],
+  "client_run_ids": [
+    "5cf6cebd-ed56-4286-9281-e2b948d0da93"
+  ],
+  "client_status_final": 2,
+  "client_callback_count": 1,
+  "client_active_confirmed": true,
+  "client_data_sent": 0,
+  "server_established_count": 2,
+  "server_callback_statuses": [
+    "ACTIVE",
+    "ACTIVE"
+  ],
+  "server_status_transitions": [
+    {
+      "status_name": "ACTIVE",
+      "elapsed_seconds": 0.0,
+      "no_inbound_for": 0.0,
+      "keepalive": 5,
+      "stale_time": 10
+    }
+  ],
+  "time_to_stale_seconds": null,
+  "time_to_closed_seconds": null,
+  "server_teardown_names": [
+    "INITIATOR_CLOSED"
+  ],
+  "server_link_data_statuses": [],
+  "server_active_link_status_series": [
+    [
+      "ACTIVE"
+    ],
+    [
+      "ACTIVE"
+    ],
+    [
+      "ACTIVE"
+    ],
+    [
+      "ACTIVE"
+    ],
+    [
+      "ACTIVE"
+    ],
+    [
+      "ACTIVE"
+    ],
+    [
+      "ACTIVE"
+    ],
+    [
+      "ACTIVE"
+    ],
+    [
+      "ACTIVE"
+    ]
+  ],
+  "perturbation_events": null,
+  "perturbation_consumed": null,
+  "app_callbacks": 2,
+  "app_sessions_created": 0,
+  "app_accounting_units": 0,
+  "app_redundant_calls": 0,
+  "app_invariant_violations": 0,
+  "app_sessions_for_link": {
+    "55b883da3c2b845dbcc6c706b99ad4bf": 2
+  },
+  "server_callbacks_by_link": {
+    "55b883da3c2b845dbcc6c706b99ad4bf": 2
+  },
+  "server_link_ids": [
+    "55b883da3c2b845dbcc6c706b99ad4bf"
+  ],
+  "client_link_ids": [
+    "55b883da3c2b845dbcc6c706b99ad4bf"
+  ],
+  "correlated_link_ids": [
+    "55b883da3c2b845dbcc6c706b99ad4bf"
+  ],
+  "probe_sent": true,
+  "replay_injected": false,
+  "hardening_installed": false,
+  "hardening_rtt_rejected": 0,
+  "server_link_closed_events": 1,
+  "client_link_closed_events": 1,
+  "server_callback_states": [
+    {
+      "callback_number": 1,
+      "status": 2,
+      "rtt": 0.001235,
+      "expected_hops": 1,
+      "keepalive": 5,
+      "stale_time": 10,
+      "age_seconds": 2e-05
+    },
+    {
+      "callback_number": 2,
+      "status": 2,
+      "rtt": 2.0,
+      "expected_hops": 1,
+      "keepalive": 360,
+      "stale_time": 720,
+      "age_seconds": 2.2e-05
+    }
+  ],
+  "server_late_samples": [
+    {
+      "status": 2,
+      "rx": 2,
+      "rxbytes": 128,
+      "rtt": 2.0,
+      "keepalive": 360,
+      "age_seconds": 1.979826
+    },
+    {
+      "status": 2,
+      "rx": 2,
+      "rxbytes": 128,
+      "rtt": 2.0,
+      "keepalive": 360,
+      "age_seconds": 2.00042
+    }
+  ],
+  "run_failed_events": []
+}

@@ -1,0 +1,40 @@
+{"t_ns": 179412, "epoch_ns": 1792723615911681124, "event": "trace_installed", "thread": "MainThread", "role": "server"}
+{"t_ns": 1163351, "epoch_ns": 1792723615912665063, "event": "hash_add", "thread": "MainThread", "hash": "97ddd11ac823a44f", "already_present": false, "hashlist_size": 1}
+{"t_ns": 276796258, "epoch_ns": 1792723616188297970, "event": "recv", "thread": "Thread-8 (process_request_thread)", "bytes": 201}
+{"t_ns": 276863092, "epoch_ns": 1792723616188364804, "event": "filter", "thread": "Thread-8 (process_request_thread)", "hash": "dec85b0269f16748", "present": false, "present_prev": false, "passed": true, "context": 0, "packet_type": 0, "destination": "91bf0910267b59b0", "hops": 0}
+{"t_ns": 276886705, "epoch_ns": 1792723616188388417, "event": "enqueue", "thread": "Thread-8 (process_request_thread)", "hash": "dec85b0269f16748", "traffic_class": 0, "queue_depth_before": 0, "queue_depth_after": 1}
+{"t_ns": 276936087, "epoch_ns": 1792723616188437799, "event": "inbound_entry", "thread": "Thread-5 (inbound_job)", "hash": "dec85b0269f16748", "present": false, "context": 0, "queue_depth": 0}
+{"t_ns": 276946867, "epoch_ns": 1792723616188448579, "event": "hash_add", "thread": "Thread-5 (inbound_job)", "hash": "dec85b0269f16748", "already_present": false, "hashlist_size": 2}
+{"t_ns": 281989041, "epoch_ns": 1792723616193490753, "event": "recv", "thread": "Thread-8 (process_request_thread)", "bytes": 53}
+{"t_ns": 282044814, "epoch_ns": 1792723616193546526, "event": "filter", "thread": "Thread-8 (process_request_thread)", "hash": "48af537d0f9d03ec", "present": false, "present_prev": false, "passed": true, "context": 0, "packet_type": 0, "destination": "6b9f66014d9853fa", "hops": 0}
+{"t_ns": 282085670, "epoch_ns": 1792723616193587382, "event": "enqueue", "thread": "Thread-8 (process_request_thread)", "hash": "48af537d0f9d03ec", "traffic_class": 2, "queue_depth_before": 0, "queue_depth_after": 1}
+{"t_ns": 282117589, "epoch_ns": 1792723616193619301, "event": "dequeue", "thread": "Thread-5 (inbound_job)", "hash": "48af537d0f9d03ec", "queue_depth_after": 0}
+{"t_ns": 282123289, "epoch_ns": 1792723616193625001, "event": "inbound_entry", "thread": "Thread-5 (inbound_job)", "hash": "48af537d0f9d03ec", "present": false, "context": 0, "queue_depth": 0}
+{"t_ns": 282130843, "epoch_ns": 1792723616193632555, "event": "hash_add", "thread": "Thread-5 (inbound_job)", "hash": "48af537d0f9d03ec", "already_present": false, "hashlist_size": 3}
+{"t_ns": 282246617, "epoch_ns": 1792723616193748329, "event": "hash_add", "thread": "Thread-5 (inbound_job)", "hash": "02f67491f64ce994", "already_present": false, "hashlist_size": 4}
+{"t_ns": 783350974, "epoch_ns": 1792723616694852686, "event": "recv", "thread": "Thread-8 (process_request_thread)", "bytes": 88}
+{"t_ns": 783416556, "epoch_ns": 1792723616694918268, "event": "filter", "thread": "Thread-8 (process_request_thread)", "hash": "09a9bf93649bb801", "present": false, "present_prev": false, "passed": true, "context": 0, "packet_type": 2, "destination": "3b163319ba0cf242", "hops": 0}
+{"t_ns": 783446792, "epoch_ns": 1792723616694948504, "event": "enqueue", "thread": "Thread-8 (process_request_thread)", "hash": "09a9bf93649bb801", "traffic_class": 0, "queue_depth_before": 0, "queue_depth_after": 1}
+{"t_ns": 783469133, "epoch_ns": 1792723616694970845, "event": "dequeue", "thread": "Thread-5 (inbound_job)", "hash": "09a9bf93649bb801", "queue_depth_after": 0}
+{"t_ns": 783473531, "epoch_ns": 1792723616694975243, "event": "inbound_entry", "thread": "Thread-5 (inbound_job)", "hash": "09a9bf93649bb801", "present": false, "context": 0, "queue_depth": 0}
+{"t_ns": 783482147, "epoch_ns": 1792723616694983859, "event": "hash_add", "thread": "Thread-5 (inbound_job)", "hash": "09a9bf93649bb801", "already_present": false, "hashlist_size": 5}
+{"t_ns": 783902635, "epoch_ns": 1792723616695404347, "event": "hash_add", "thread": "Thread-5 (inbound_job)", "hash": "d577f0898e30f949", "already_present": false, "hashlist_size": 6}
+{"t_ns": 784866156, "epoch_ns": 1792723616696367868, "event": "recv", "thread": "Thread-8 (process_request_thread)", "bytes": 86}
+{"t_ns": 784884089, "epoch_ns": 1792723616696385801, "event": "filter", "thread": "Thread-8 (process_request_thread)", "hash": "84a08f82fc51d697", "present": false, "present_prev": false, "passed": true, "context": 254, "packet_type": 0, "destination": "80927fc551be7ad1", "hops": 0}
+{"t_ns": 784894819, "epoch_ns": 1792723616696396531, "event": "enqueue", "thread": "Thread-8 (process_request_thread)", "hash": "84a08f82fc51d697", "traffic_class": 0, "queue_depth_before": 0, "queue_depth_after": 1}
+{"t_ns": 784902263, "epoch_ns": 1792723616696403975, "event": "dequeue", "thread": "Thread-5 (inbound_job)", "hash": "84a08f82fc51d697", "queue_depth_after": 0}
+{"t_ns": 784904317, "epoch_ns": 1792723616696406029, "event": "inbound_entry", "thread": "Thread-5 (inbound_job)", "hash": "84a08f82fc51d697", "present": false, "context": 254, "queue_depth": 0}
+{"t_ns": 784911069, "epoch_ns": 1792723616696412781, "event": "hash_add", "thread": "Thread-5 (inbound_job)", "hash": "84a08f82fc51d697", "already_present": false, "hashlist_size": 7}
+{"t_ns": 784919725, "epoch_ns": 1792723616696421437, "event": "link_receive", "thread": "Thread-5 (inbound_job)", "link_id": "80927fc551be7ad1", "context": 254, "status": 1, "rx": 0}
+{"t_ns": 784930906, "epoch_ns": 1792723616696432618, "event": "rtt_enter", "thread": "Thread-5 (inbound_job)", "link_id": "80927fc551be7ad1", "status": 1, "rx": 1}
+{"t_ns": 785556653, "epoch_ns": 1792723616697058365, "event": "rtt_exit", "thread": "Thread-5 (inbound_job)", "link_id": "80927fc551be7ad1", "status": 2, "rtt": 0.0017428398132324219}
+{"t_ns": 825721895, "epoch_ns": 1792723616737223607, "event": "recv", "thread": "Thread-8 (process_request_thread)", "bytes": 86}
+{"t_ns": 825836837, "epoch_ns": 1792723616737338549, "event": "filter", "thread": "Thread-8 (process_request_thread)", "hash": "84a08f82fc51d697", "present": true, "present_prev": false, "passed": false, "context": 254, "packet_type": 0, "destination": "80927fc551be7ad1", "hops": 0}
+{"t_ns": 3786838876, "epoch_ns": 1792723619698340588, "event": "recv", "thread": "tid-140668181644992", "bytes": 102}
+{"t_ns": 3786878629, "epoch_ns": 1792723619698380341, "event": "filter", "thread": "tid-140668181644992", "hash": "5154f6429c2fe3da", "present": false, "present_prev": false, "passed": true, "context": 252, "packet_type": 0, "destination": "80927fc551be7ad1", "hops": 0}
+{"t_ns": 3786898105, "epoch_ns": 1792723619698399817, "event": "enqueue", "thread": "tid-140668181644992", "hash": "5154f6429c2fe3da", "traffic_class": 0, "queue_depth_before": 0, "queue_depth_after": 1}
+{"t_ns": 3786920056, "epoch_ns": 1792723619698421768, "event": "dequeue", "thread": "Thread-5 (inbound_job)", "hash": "5154f6429c2fe3da", "queue_depth_after": 0}
+{"t_ns": 3786930405, "epoch_ns": 1792723619698432117, "event": "inbound_entry", "thread": "Thread-5 (inbound_job)", "hash": "5154f6429c2fe3da", "present": false, "context": 252, "queue_depth": 0}
+{"t_ns": 3786943189, "epoch_ns": 1792723619698444901, "event": "hash_add", "thread": "Thread-5 (inbound_job)", "hash": "5154f6429c2fe3da", "already_present": false, "hashlist_size": 8}
+{"t_ns": 3786954560, "epoch_ns": 1792723619698456272, "event": "link_receive", "thread": "Thread-5 (inbound_job)", "link_id": "80927fc551be7ad1", "context": 252, "status": 2, "rx": 1}
+{"t_ns": 5001504776, "epoch_ns": 1792723620913006488, "event": "hash_add", "thread": "MainThread", "hash": "842a83052f52add4", "already_present": false, "hashlist_size": 9}

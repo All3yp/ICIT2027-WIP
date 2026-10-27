@@ -1,0 +1,24 @@
+{"timestamp_utc": "2026-10-21T18:54:13.382951+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "process_started", "config_dir": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/results/trials/T2bad_20261021T185412Z_515658f5/runtime/client", "rns_module": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/.venv/lib/python3.13/site-packages/RNS/__init__.py", "rns_version": "1.5.7", "python": "3.13.16", "probe_mode": "corrupt", "hardening": "off"}
+{"timestamp_utc": "2026-10-21T18:54:13.408549+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "interfaces_initialised", "interfaces": [{"interface": "TCPInterface[Research Loopback Client/127.0.0.1:42643]", "name": "Research Loopback Client", "online": true, "in": true, "out": true, "mode": 1, "never_connected": false}]}
+{"timestamp_utc": "2026-10-21T18:54:13.408860+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "tcp_interface_online", "interfaces": [{"interface": "TCPInterface[Research Loopback Client/127.0.0.1:42643]", "name": "Research Loopback Client", "online": true, "in": true, "out": true, "mode": 1, "never_connected": false}]}
+{"timestamp_utc": "2026-10-21T18:54:13.409005+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "path_search_started", "target": "a55e29cf2244bbc796db0ffde53cb7b6", "known_paths": []}
+{"timestamp_utc": "2026-10-21T18:54:13.409377+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "path_search_waiting", "target": "a55e29cf2244bbc796db0ffde53cb7b6", "known_paths": [], "interfaces": [{"interface": "TCPInterface[Research Loopback Client/127.0.0.1:42643]", "name": "Research Loopback Client", "online": true, "in": true, "out": true, "mode": 1, "never_connected": false}]}
+{"timestamp_utc": "2026-10-21T18:54:13.909688+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "path_discovered", "target": "a55e29cf2244bbc796db0ffde53cb7b6", "hops": 1, "known_paths": ["a55e29cf2244bbc796db0ffde53cb7b6"]}
+{"timestamp_utc": "2026-10-21T18:54:13.911481+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "client_link_requested", "link_id": "bac7fb5f0e750fc038f209ac35c17e85"}
+{"timestamp_utc": "2026-10-21T18:54:13.914980+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "client_established", "link_id": "bac7fb5f0e750fc038f209ac35c17e85", "status": 2, "callback_number": 1}
+{"timestamp_utc": "2026-10-21T18:54:14.915846+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "run_failed", "reason": "AttributeError(\"type object 'Link' has no attribute 'Link'\")"}
+Traceback (most recent call last):
+  File "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/lab/link_lab.py", line 488, in <module>
+    main()
+    ~~~~^^
+  File "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/lab/link_lab.py", line 481, in main
+    client(RNS, umsgpack, args, log)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/lab/link_lab.py", line 404, in client
+    send_probe(RNS, umsgpack, link, args.probe_mode, log)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/lab/link_lab.py", line 287, in send_probe
+    RNS.Link.Link.encrypt = original
+    ^^^^^^^^^^^^^
+AttributeError: type object 'Link' has no attribute 'Link'
+{"timestamp_utc": "2026-10-21T18:54:14.919349+00:00", "run_id": "17c8a54c-5790-4f1d-b532-607cfa997b7e", "role": "client", "trial": "T2bad", "event": "client_link_closed", "link_id": "bac7fb5f0e750fc038f209ac35c17e85", "status": 4}

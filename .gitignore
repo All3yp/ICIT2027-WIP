@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Test and figure output
+.pytest_cache/
+figures/
+
+# Generated RNS lab runtime state (configs, storage, persisted identities)
+lab/runtime*/
+
+# Per-run RNS runtime state inside the datasets (regenerable). Evidence that is
+# kept: server.jsonl, client.jsonl, manifest.json, stdout logs, destination_hash
+# and the deterministic interface configs.
+results/trials/*/runtime/*/storage/
+results/trials/*/runtime/*/interfaces/
+results/trials/*/runtime/server/identity
+results/e3dup/*/runtime/*/storage/
+results/e3dup/*/runtime/*/interfaces/
+results/e3dup/*/runtime/server/identity
+results/multinode/*/runtime/*/storage/
+results/multinode/*/runtime/*/interfaces/
+results/multinode/*/runtime/server/identity
+results/multinode_pre_fix_invalid/*/runtime/*/storage/
+results/multinode_pre_fix_invalid/*/runtime/*/interfaces/
+results/multinode_pre_fix_invalid/*/runtime/server/identity
+
+# OS
+.DS_Store

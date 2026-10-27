@@ -1,0 +1,107 @@
+{
+  "trial": "E3droph",
+  "repeat_index": 0,
+  "run_dir": "results/trials/E3droph_20261022T214721Z_58787b2a",
+  "port": 43130,
+  "started_utc": "2026-10-22T21:47:21.227168+00:00",
+  "probe_once": false,
+  "probe_mode": "none",
+  "hardening": "guarded-rtt",
+  "app_mode": "counting",
+  "observe_seconds": 0.0,
+  "pause_seconds": 14.0,
+  "perturb": "drop",
+  "extra_rtt": null,
+  "probe_delay": 1.0,
+  "data_packets": 0,
+  "no_teardown": true,
+  "fingerprints": {
+    "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+    "link_lab_sha256": "5125a78dcf3ca73f27e6051108211002b61dd956b17d0cfc173b9153cb1a0cdd",
+    "installed_link_py_sha256": "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263",
+    "server_config_sha256": "7152d31a4b7d0e200f2389ef9fea75f5927654653cc109353c3afe2fb3a12641",
+    "client_config_sha256": "52c9354e98520cb99913f49b7c47c100b00a3dec52e62c26cfaffb4b3670502a"
+  },
+  "interpreter": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/.venv/bin/python",
+  "python": "3.13.16",
+  "host": "zephy",
+  "kernel": "6.18.55-2-cachyos-lts",
+  "server_ready": true,
+  "server_ready_seconds": 0.2,
+  "finished_utc": "2026-10-22T21:47:40.670712+00:00",
+  "status": "OK",
+  "client": {
+    "exit_code": 0,
+    "pause_seconds": 14.0,
+    "paused": true,
+    "duration_seconds": 15.874
+  },
+  "server_termination": {
+    "exit_code": 0,
+    "terminated_signal": "SIGINT",
+    "hard_kill": false
+  },
+  "wall_seconds": 19.444,
+  "link_latency_seconds": 0.001517,
+  "server_run_ids": [
+    "fbe3adae-682b-4a1b-a2fd-5399f1ede02f"
+  ],
+  "client_run_ids": [
+    "9fd931a2-1789-4bcb-8bff-93a418074b0f"
+  ],
+  "client_status_final": 2,
+  "client_callback_count": 1,
+  "client_active_confirmed": true,
+  "client_data_sent": 0,
+  "server_established_count": 0,
+  "server_callback_statuses": [],
+  "server_status_transitions": [],
+  "time_to_stale_seconds": null,
+  "time_to_closed_seconds": null,
+  "server_teardown_names": [],
+  "server_link_data_statuses": [],
+  "server_destination_link_series": [
+    [],
+    [
+      "HANDSHAKE"
+    ],
+    [
+      "HANDSHAKE"
+    ],
+    [
+      "HANDSHAKE"
+    ],
+    [
+      "HANDSHAKE"
+    ],
+    []
+  ],
+  "perturbation_events": [
+    {
+      "perturbation": "drop",
+      "dropped_bytes": 83
+    }
+  ],
+  "perturbation_consumed": true,
+  "app_callbacks": null,
+  "app_sessions_created": null,
+  "app_accounting_units": null,
+  "app_redundant_calls": null,
+  "app_invariant_violations": null,
+  "app_sessions_for_link": null,
+  "server_callbacks_by_link": {},
+  "server_link_ids": [],
+  "client_link_ids": [
+    "db3df26ba5c4fce40ffaedd38ff4e8c7"
+  ],
+  "correlated_link_ids": [],
+  "probe_sent": false,
+  "replay_injected": false,
+  "hardening_installed": true,
+  "hardening_rtt_rejected": 0,
+  "server_link_closed_events": 0,
+  "client_link_closed_events": 1,
+  "server_callback_states": [],
+  "server_late_samples": [],
+  "run_failed_events": []
+}

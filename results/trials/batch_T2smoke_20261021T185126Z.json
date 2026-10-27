@@ -1,0 +1,89 @@
+{
+  "trial": "T2smoke",
+  "repeats": 1,
+  "probe_once": true,
+  "probe_mode": "fresh",
+  "hardening": "guarded-rtt",
+  "completed_utc": "2026-10-21T18:51:26.009099+00:00",
+  "statuses": [
+    "OK"
+  ],
+  "results": [
+    {
+      "trial": "T2smoke",
+      "repeat_index": 0,
+      "run_dir": "results/trials/T2smoke_20261021T185118Z_9f7f3375",
+      "port": 42600,
+      "started_utc": "2026-10-21T18:51:18.606307+00:00",
+      "probe_once": true,
+      "probe_mode": "fresh",
+      "hardening": "guarded-rtt",
+      "fingerprints": {
+        "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+        "link_lab_sha256": "0f532c482246652871a5b52bd1b9c718f81b18f99bf9348011c2ad146b6f56a1",
+        "installed_link_py_sha256": "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263",
+        "server_config_sha256": "00850091b32cd1f44092fd6710b32609122db72b1cac81cb659c22404d8fa615",
+        "client_config_sha256": "b1bb81ab0c16b2a3067e71b618386ca1e14b9c764e3364defd6282ab83add17c"
+      },
+      "interpreter": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/.venv/bin/python",
+      "python": "3.13.16",
+      "host": "zephy",
+      "kernel": "6.18.55-2-cachyos-lts",
+      "server_ready": true,
+      "server_ready_seconds": 0.201,
+      "finished_utc": "2026-10-21T18:51:26.008843+00:00",
+      "status": "OK",
+      "client": {
+        "exit_code": 0,
+        "duration_seconds": 3.884
+      },
+      "server_termination": {
+        "exit_code": 0,
+        "terminated_signal": "SIGINT",
+        "hard_kill": false
+      },
+      "wall_seconds": 7.403,
+      "link_latency_seconds": 0.002557,
+      "server_run_ids": [
+        "af0f31fb-a453-4028-a5a0-8db4a6240623"
+      ],
+      "client_run_ids": [
+        "4940bb11-1c69-4a3e-ae22-f016b358c1cf"
+      ],
+      "client_status_final": 2,
+      "client_callback_count": 1,
+      "client_active_confirmed": true,
+      "server_established_count": 1,
+      "server_callbacks_by_link": {
+        "73335ccd5b701f3f57e8bf71bcfcb89c": 1
+      },
+      "server_link_ids": [
+        "73335ccd5b701f3f57e8bf71bcfcb89c"
+      ],
+      "client_link_ids": [
+        "73335ccd5b701f3f57e8bf71bcfcb89c"
+      ],
+      "correlated_link_ids": [
+        "73335ccd5b701f3f57e8bf71bcfcb89c"
+      ],
+      "probe_sent": true,
+      "replay_injected": false,
+      "hardening_installed": true,
+      "hardening_rtt_rejected": 1,
+      "server_link_closed_events": 1,
+      "client_link_closed_events": 1,
+      "server_callback_states": [
+        {
+          "callback_number": 1,
+          "status": 2,
+          "rtt": 0.002827,
+          "expected_hops": 1,
+          "keepalive": 5,
+          "stale_time": 10,
+          "age_seconds": 1.9e-05
+        }
+      ],
+      "run_failed_events": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[reticulum]
+enable_transport = no
+share_instance = no
+
+[interfaces]
+  [[Research Loopback Client]]
+    type = TCPClientInterface
+    enabled = yes
+    target_host = 127.0.0.1
+    target_port = 42940

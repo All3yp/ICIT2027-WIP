@@ -1,0 +1,10 @@
+{"timestamp_utc": "2026-10-23T02:46:56.030495+00:00", "event": "relay_listening", "t_ns": 94285, "listen_port": 44621, "upstream_port": 44521, "duplicate_delay_seconds": 0.001}
+{"timestamp_utc": "2026-10-23T02:46:56.181516+00:00", "event": "relay_client_accepted", "t_ns": 151126276, "peer": "('127.0.0.1', 35726)"}
+{"timestamp_utc": "2026-10-23T02:46:56.182900+00:00", "event": "relay_upstream_connected", "t_ns": 152497852, "port": 44521}
+{"timestamp_utc": "2026-10-23T02:46:56.188172+00:00", "event": "frame_forwarded", "t_ns": 157774879, "direction": "c2s", "bytes": 195, "lrrtt": false}
+{"timestamp_utc": "2026-10-23T02:46:56.193407+00:00", "event": "frame_forwarded", "t_ns": 163005833, "direction": "c2s", "bytes": 51, "lrrtt": false}
+{"timestamp_utc": "2026-10-23T02:46:56.193827+00:00", "event": "frame_forwarded", "t_ns": 163423245, "direction": "s2c", "bytes": 167, "lrrtt": false}
+{"timestamp_utc": "2026-10-23T02:46:56.694744+00:00", "event": "frame_forwarded", "t_ns": 664345616, "direction": "c2s", "bytes": 86, "lrrtt": false}
+{"timestamp_utc": "2026-10-23T02:46:56.695587+00:00", "event": "frame_forwarded", "t_ns": 665182263, "direction": "s2c", "bytes": 118, "lrrtt": false}
+{"timestamp_utc": "2026-10-23T02:46:56.697427+00:00", "event": "lrrtt_duplicated", "t_ns": 667022616, "direction": "c2s", "bytes": 83, "duplicate_delay_seconds": 0.001, "key_material_used": false}
+{"timestamp_utc": "2026-10-23T02:46:59.698260+00:00", "event": "frame_forwarded", "t_ns": 3667858152, "direction": "c2s", "bytes": 99, "lrrtt": false}

@@ -1,0 +1,85 @@
+{
+  "trial_filter": "T2ctl",
+  "runs": 5,
+  "statuses": [
+    "OK"
+  ],
+  "all_correlated_single_callback": true,
+  "rows": [
+    {
+      "run": "T2ctl_20261021T045642Z_6f470302",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "5a6330fc5df4082e91dbca1fe721f59c": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.862,
+      "probe_sent": false,
+      "failures": []
+    },
+    {
+      "run": "T2ctl_20261021T045649Z_3e5d624b",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "316a07b08783db2ebf6b6b774e51eb15": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 31.171,
+      "probe_sent": false,
+      "failures": []
+    },
+    {
+      "run": "T2ctl_20261021T045656Z_90a5af6a",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "c9a04f4ab6c86f43e960c8a2351ef88d": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.245,
+      "probe_sent": false,
+      "failures": []
+    },
+    {
+      "run": "T2ctl_20261021T045704Z_69047f45",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "d7cab0555dc37ffb57362ce5a7206661": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.336,
+      "probe_sent": false,
+      "failures": []
+    },
+    {
+      "run": "T2ctl_20261021T045711Z_0028a492",
+      "status": "OK",
+      "client_active": true,
+      "client_cb": 1,
+      "server_cb_total": 1,
+      "server_cb_by_link": {
+        "7125a7eaaba299216622a27a09b61315": 1
+      },
+      "max_cb_per_link": 1,
+      "correlated": 1,
+      "latency_ms": 1.275,
+      "probe_sent": false,
+      "failures": []
+    }
+  ]
+}

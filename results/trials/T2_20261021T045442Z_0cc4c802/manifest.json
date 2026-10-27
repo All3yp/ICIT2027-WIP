@@ -1,0 +1,58 @@
+{
+  "trial": "T2",
+  "repeat_index": 2,
+  "run_dir": "results/trials/T2_20261021T045442Z_0cc4c802",
+  "port": 42522,
+  "started_utc": "2026-10-21T04:54:42.783416+00:00",
+  "probe_once": true,
+  "fingerprints": {
+    "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+    "link_lab_sha256": "786f86b9898cb62d69ccd93c51c88b8dea9ca59deb2b06c56bc7f749a0b3f028",
+    "installed_link_py_sha256": "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263",
+    "server_config_sha256": "d48570343ae677bd2b8e8f76d0ac94d11fc563e3fe543c2f54c9c570bee23df1",
+    "client_config_sha256": "cb173854537987defc5c2b59aa3d03a2beafaaec56eb58ccc53d6509bb17034b"
+  },
+  "interpreter": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/.venv/bin/python",
+  "python": "3.13.16",
+  "host": "zephy",
+  "kernel": "6.18.55-2-cachyos-lts",
+  "server_ready": true,
+  "server_ready_seconds": 0.2,
+  "finished_utc": "2026-10-21T04:54:50.141103+00:00",
+  "status": "OK",
+  "client": {
+    "exit_code": 0,
+    "duration_seconds": 3.791
+  },
+  "server_termination": {
+    "exit_code": 0,
+    "terminated_signal": "SIGINT",
+    "hard_kill": false
+  },
+  "wall_seconds": 22.068,
+  "link_latency_seconds": 0.001365,
+  "server_run_ids": [
+    "569ae5c5-6b97-4bb9-b8d3-78362994bb96"
+  ],
+  "client_run_ids": [
+    "5eb9c71d-e63e-4b23-9115-ddca6dc07e87"
+  ],
+  "client_status_final": 2,
+  "client_callback_count": 1,
+  "client_active_confirmed": true,
+  "server_established_count": 2,
+  "server_callbacks_by_link": {
+    "64a26ec647b9e0ec84a6297892084c36": 2
+  },
+  "server_link_ids": [
+    "64a26ec647b9e0ec84a6297892084c36"
+  ],
+  "client_link_ids": [
+    "64a26ec647b9e0ec84a6297892084c36"
+  ],
+  "correlated_link_ids": [
+    "64a26ec647b9e0ec84a6297892084c36"
+  ],
+  "probe_sent": true,
+  "run_failed_events": []
+}

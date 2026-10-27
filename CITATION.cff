@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or its dataset, please cite it as below."
+type: software
+title: "Loopback laboratory for RNS 1.5.7 link-establishment measurements"
+abstract: >-
+  Harness, dataset and analysis scripts for a loopback measurement study of
+  link establishment in the Reticulum Network Stack, pinned to RNS 1.5.7.
+authors:
+  - family-names: "do Nascimento Pereira"
+    given-names: "Noyalle"
+    orcid: "https://orcid.org/0009-0004-9481-5645"
+  - family-names: "Cavalcante Martins Oliveira"
+    given-names: "João Paolo"
+    orcid: "https://orcid.org/0000-0003-4117-953X"
+  - family-names: "Teske"
+    given-names: "Lucas"
+    orcid: "https://orcid.org/0009-0002-8526-7662"
+repository-code: "https://github.com/All3yp/ICIT2027-WIP"
+license:
+  - MIT
+  - CC-BY-4.0
+version: "0.1.0"
+year: 2026

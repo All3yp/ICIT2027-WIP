@@ -1,0 +1,131 @@
+{
+  "trial": "E3delay",
+  "repeat_index": 1,
+  "run_dir": "results/trials/E3delay_20261022T214848Z_74382cd3",
+  "port": 43141,
+  "started_utc": "2026-10-22T21:48:48.974589+00:00",
+  "probe_once": false,
+  "probe_mode": "none",
+  "hardening": "off",
+  "app_mode": "counting",
+  "observe_seconds": 0.0,
+  "pause_seconds": 0.0,
+  "perturb": "delay",
+  "extra_rtt": null,
+  "probe_delay": 1.0,
+  "data_packets": 0,
+  "no_teardown": false,
+  "fingerprints": {
+    "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+    "link_lab_sha256": "5125a78dcf3ca73f27e6051108211002b61dd956b17d0cfc173b9153cb1a0cdd",
+    "installed_link_py_sha256": "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263",
+    "server_config_sha256": "6b706027e98170932b94220788bdf546cc121c87d3dc9a6b9f5a175fc63500b2",
+    "client_config_sha256": "64f8a834fc2fcf8257254adcc4db38e9859814b4ac0c255b98ce3e4293754e51"
+  },
+  "interpreter": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/.venv/bin/python",
+  "python": "3.13.16",
+  "host": "zephy",
+  "kernel": "6.18.55-2-cachyos-lts",
+  "server_ready": true,
+  "server_ready_seconds": 0.2,
+  "finished_utc": "2026-10-22T21:48:56.332828+00:00",
+  "status": "OK",
+  "client": {
+    "exit_code": 0,
+    "duration_seconds": 3.792
+  },
+  "server_termination": {
+    "exit_code": 0,
+    "terminated_signal": "SIGINT",
+    "hard_kill": false
+  },
+  "wall_seconds": 14.717,
+  "link_latency_seconds": 0.00137,
+  "server_run_ids": [
+    "7e4b56e7-b8c2-43ea-962b-a2f51fc2adaf"
+  ],
+  "client_run_ids": [
+    "0c0f709e-11f9-4c0d-bedf-f11901760319"
+  ],
+  "client_status_final": 2,
+  "client_callback_count": 1,
+  "client_active_confirmed": true,
+  "client_data_sent": 0,
+  "server_established_count": 1,
+  "server_callback_statuses": [
+    "ACTIVE"
+  ],
+  "server_status_transitions": [],
+  "time_to_stale_seconds": null,
+  "time_to_closed_seconds": null,
+  "server_teardown_names": [
+    "INITIATOR_CLOSED"
+  ],
+  "server_link_data_statuses": [],
+  "server_destination_link_series": [
+    [],
+    [
+      "HANDSHAKE"
+    ],
+    [
+      "ACTIVE"
+    ],
+    []
+  ],
+  "perturbation_events": [
+    {
+      "perturbation": "delay",
+      "delayed_seconds": 2.0,
+      "bytes": 83
+    }
+  ],
+  "perturbation_consumed": true,
+  "app_callbacks": 1,
+  "app_sessions_created": 0,
+  "app_accounting_units": 0,
+  "app_redundant_calls": 0,
+  "app_invariant_violations": 0,
+  "app_sessions_for_link": {
+    "2b2446dfff914732346018b69fda35ca": 1
+  },
+  "server_callbacks_by_link": {
+    "2b2446dfff914732346018b69fda35ca": 1
+  },
+  "server_link_ids": [
+    "2b2446dfff914732346018b69fda35ca"
+  ],
+  "client_link_ids": [
+    "2b2446dfff914732346018b69fda35ca"
+  ],
+  "correlated_link_ids": [
+    "2b2446dfff914732346018b69fda35ca"
+  ],
+  "probe_sent": false,
+  "replay_injected": false,
+  "hardening_installed": false,
+  "hardening_rtt_rejected": 0,
+  "server_link_closed_events": 1,
+  "client_link_closed_events": 1,
+  "server_callback_states": [
+    {
+      "callback_number": 1,
+      "status": 2,
+      "rtt": 2.001874,
+      "expected_hops": 1,
+      "keepalive": 360,
+      "stale_time": 720,
+      "age_seconds": 2.5e-05
+    }
+  ],
+  "server_late_samples": [
+    {
+      "status": 4,
+      "rx": 2,
+      "rxbytes": 144,
+      "rtt": 2.001874,
+      "keepalive": 360,
+      "age_seconds": 2.000433
+    }
+  ],
+  "run_failed_events": []
+}

@@ -1,0 +1,139 @@
+{
+  "trial": "E3dupQ20ms",
+  "repeat_index": 5,
+  "run_dir": "results/e3dup/E3dupQ20ms_20261023T024035Z_17dcdc36",
+  "port": 44265,
+  "started_utc": "2026-10-23T02:40:35.792673+00:00",
+  "probe_once": false,
+  "probe_mode": "none",
+  "hardening": "off",
+  "app_mode": "counting",
+  "observe_seconds": 0.0,
+  "pause_seconds": 0.0,
+  "perturb": "dup",
+  "dup_delay": 0.02,
+  "extra_rtt": null,
+  "probe_delay": 1.0,
+  "data_packets": 0,
+  "no_teardown": false,
+  "trace_packets": true,
+  "sync_inbound": false,
+  "fingerprints": {
+    "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+    "link_lab_sha256": "c583e840681a5073b631d9dafef170acb9ecc895442e98023b16bab6528658a9",
+    "deep_trace_sha256": "f43f1058f03260e8b88d2bd48b49351384162451d3b45ee1d14f254456187317",
+    "installed_link_py_sha256": "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263",
+    "server_config_sha256": "59361623351567aaa5a109c2709ec9536c4ad6578ed1bf6448a05771b593cb5d",
+    "client_config_sha256": "a38dbd99226a244d6ed2740305be3079f36c54c59b0d12f833fb6768f4b58976"
+  },
+  "interpreter": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/.venv/bin/python",
+  "python": "3.13.16",
+  "host": "zephy",
+  "kernel": "6.18.55-2-cachyos-lts",
+  "server_ready": true,
+  "server_ready_seconds": 0.2,
+  "finished_utc": "2026-10-23T02:40:43.181346+00:00",
+  "status": "OK",
+  "client": {
+    "exit_code": 0,
+    "duration_seconds": 3.873
+  },
+  "server_termination": {
+    "exit_code": 0,
+    "terminated_signal": "SIGINT",
+    "hard_kill": false
+  },
+  "wall_seconds": 44.339,
+  "link_latency_seconds": 0.001732,
+  "server_run_ids": [
+    "f2570867-16d9-41a3-887a-7c12dee542c5"
+  ],
+  "client_run_ids": [
+    "6277bdc8-5265-4dc3-8f90-58270e910824"
+  ],
+  "client_status_final": 2,
+  "client_callback_count": 1,
+  "client_active_confirmed": true,
+  "client_data_sent": 0,
+  "server_established_count": 1,
+  "server_callback_statuses": [
+    "ACTIVE"
+  ],
+  "server_status_transitions": [],
+  "time_to_stale_seconds": null,
+  "time_to_closed_seconds": null,
+  "server_teardown_names": [
+    "INITIATOR_CLOSED"
+  ],
+  "server_link_data_statuses": [],
+  "server_link_data_early": [],
+  "server_destination_link_series": [
+    [],
+    [
+      "ACTIVE"
+    ],
+    []
+  ],
+  "perturbation_events": [
+    {
+      "perturbation": "dup",
+      "transmissions": 2,
+      "bytes": 83,
+      "identical_bytes": true,
+      "second_copy_delay_seconds": 0.02
+    }
+  ],
+  "perturbation_consumed": true,
+  "trace_files": {
+    "server_trace.jsonl": "2b0ede1e88a745437f92b6d803a043bb1d5dead8b6d76880168fb79b2918bfa5",
+    "client_trace.jsonl": "9b6aeab01e2f5e05e4ad896bc0c638dfd5d6c24cb3e2118f63554aaf17300bb6"
+  },
+  "app_callbacks": 1,
+  "app_sessions_created": 0,
+  "app_accounting_units": 0,
+  "app_redundant_calls": 0,
+  "app_invariant_violations": 0,
+  "app_sessions_for_link": {
+    "4906dd367c7ff845ebf5703da3678c99": 1
+  },
+  "server_callbacks_by_link": {
+    "4906dd367c7ff845ebf5703da3678c99": 1
+  },
+  "server_link_ids": [
+    "4906dd367c7ff845ebf5703da3678c99"
+  ],
+  "client_link_ids": [
+    "4906dd367c7ff845ebf5703da3678c99"
+  ],
+  "correlated_link_ids": [
+    "4906dd367c7ff845ebf5703da3678c99"
+  ],
+  "probe_sent": false,
+  "replay_injected": false,
+  "hardening_installed": false,
+  "hardening_rtt_rejected": 0,
+  "server_link_closed_events": 1,
+  "client_link_closed_events": 1,
+  "server_callback_states": [
+    {
+      "callback_number": 1,
+      "status": 2,
+      "rtt": 0.001186,
+      "expected_hops": 1,
+      "keepalive": 5,
+      "stale_time": 10,
+      "age_seconds": 1.7e-05
+    }
+  ],
+  "server_late_samples": [
+    {
+      "status": 2,
+      "rx": 1,
+      "rxbytes": 64,
+      "rtt": 0.001186,
+      "keepalive": 5,
+      "age_seconds": 2.000406
+    }
+  ],
+  "run_failed_events": []
+}

@@ -1,0 +1,642 @@
+{
+  "conditions": {
+    "announce": {
+      "runs": 2,
+      "node_runs": 4,
+      "attempts_in_window": 48,
+      "successes_in_window": 48,
+      "success_rate": 1.0,
+      "latency_median_ms": 1.95,
+      "latency_worst_median_ms": 2.15,
+      "max_latency_ms": 5.4,
+      "attempts_outside": 72,
+      "success_rate_outside": 1.0,
+      "path_lost_total": 0,
+      "hub_cpu_seconds_inside": [
+        0.059,
+        0.053
+      ],
+      "hub_max_queue_depth": [
+        0,
+        0
+      ],
+      "hub_path_table_max": [
+        3,
+        3
+      ],
+      "adversary_sent": [
+        120,
+        120
+      ]
+    },
+    "baseline": {
+      "runs": 2,
+      "node_runs": 4,
+      "attempts_in_window": 48,
+      "successes_in_window": 48,
+      "success_rate": 1.0,
+      "latency_median_ms": 2.05,
+      "latency_worst_median_ms": 2.5,
+      "max_latency_ms": 3.9,
+      "attempts_outside": 72,
+      "success_rate_outside": 1.0,
+      "path_lost_total": 0,
+      "hub_cpu_seconds_inside": [
+        0.022,
+        0.022
+      ],
+      "hub_max_queue_depth": [
+        0,
+        0
+      ],
+      "hub_path_table_max": [
+        1,
+        1
+      ],
+      "adversary_sent": [
+        0,
+        0
+      ]
+    },
+    "benign": {
+      "runs": 2,
+      "node_runs": 4,
+      "attempts_in_window": 48,
+      "successes_in_window": 48,
+      "success_rate": 1.0,
+      "latency_median_ms": 1.77,
+      "latency_worst_median_ms": 1.85,
+      "max_latency_ms": 3.4,
+      "attempts_outside": 72,
+      "success_rate_outside": 1.0,
+      "path_lost_total": 0,
+      "hub_cpu_seconds_inside": [
+        0.055,
+        0.052
+      ],
+      "hub_max_queue_depth": [
+        0,
+        0
+      ],
+      "hub_path_table_max": [
+        1,
+        1
+      ],
+      "adversary_sent": [
+        120,
+        120
+      ]
+    },
+    "unknown": {
+      "runs": 2,
+      "node_runs": 4,
+      "attempts_in_window": 48,
+      "successes_in_window": 48,
+      "success_rate": 1.0,
+      "latency_median_ms": 1.85,
+      "latency_worst_median_ms": 2.35,
+      "max_latency_ms": 4.1,
+      "attempts_outside": 72,
+      "success_rate_outside": 1.0,
+      "path_lost_total": 0,
+      "hub_cpu_seconds_inside": [
+        0.042,
+        0.039
+      ],
+      "hub_max_queue_depth": [
+        0,
+        0
+      ],
+      "hub_path_table_max": [
+        1,
+        1
+      ],
+      "adversary_sent": [
+        120,
+        120
+      ]
+    }
+  },
+  "runs": [
+    {
+      "run": "announce_20261023T031620Z_c359096c",
+      "condition": "announce",
+      "nodes": {
+        "h2": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.15,
+            "latency_p95_ms": 2.4,
+            "latency_max_ms": 5.4,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.95,
+            "latency_p95_ms": 2.8,
+            "latency_max_ms": 2.9,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 42
+        },
+        "h3": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.0,
+            "latency_p95_ms": 2.6,
+            "latency_max_ms": 2.6,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.05,
+            "latency_p95_ms": 2.7,
+            "latency_max_ms": 2.7,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 41
+        }
+      },
+      "window_source": "adversary_log",
+      "window_start_utc": "2026-10-23T00:16:31.145106",
+      "window_end_utc": "2026-10-23T00:16:43.190759",
+      "hub": {
+        "samples_inside": 12,
+        "max_queue_depth": 0,
+        "cpu_seconds_inside": 0.059,
+        "rx_packets_inside": 203,
+        "path_table_max": 3
+      },
+      "adversary": {
+        "mode": "announce",
+        "sent": 120,
+        "first_send_utc": "2026-10-23T03:16:31.145106+00:00",
+        "last_send_utc": "2026-10-23T03:16:43.190759+00:00",
+        "cpu_seconds": 0.164
+      }
+    },
+    {
+      "run": "announce_20261023T031717Z_dfc5b945",
+      "condition": "announce",
+      "nodes": {
+        "h2": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.9,
+            "latency_p95_ms": 2.2,
+            "latency_max_ms": 3.3,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.7,
+            "latency_p95_ms": 3.0,
+            "latency_max_ms": 3.1,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 42
+        },
+        "h3": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.9,
+            "latency_p95_ms": 2.7,
+            "latency_max_ms": 2.9,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.9,
+            "latency_p95_ms": 2.7,
+            "latency_max_ms": 3.9,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 41
+        }
+      },
+      "window_source": "adversary_log",
+      "window_start_utc": "2026-10-23T00:17:27.398556",
+      "window_end_utc": "2026-10-23T00:17:39.442967",
+      "hub": {
+        "samples_inside": 12,
+        "max_queue_depth": 0,
+        "cpu_seconds_inside": 0.053,
+        "rx_packets_inside": 203,
+        "path_table_max": 3
+      },
+      "adversary": {
+        "mode": "announce",
+        "sent": 120,
+        "first_send_utc": "2026-10-23T03:17:27.398556+00:00",
+        "last_send_utc": "2026-10-23T03:17:39.442967+00:00",
+        "cpu_seconds": 0.137
+      }
+    },
+    {
+      "run": "baseline_20261023T031027Z_b515b1dc",
+      "condition": "baseline",
+      "nodes": {
+        "h2": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.8,
+            "latency_p95_ms": 2.0,
+            "latency_max_ms": 2.2,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.05,
+            "latency_p95_ms": 2.7,
+            "latency_max_ms": 8.8,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 38
+        },
+        "h3": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.8,
+            "latency_p95_ms": 2.7,
+            "latency_max_ms": 3.6,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.05,
+            "latency_p95_ms": 2.9,
+            "latency_max_ms": 3.1,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 37
+        }
+      },
+      "window_source": "manifest",
+      "window_start_utc": "2026-10-23T00:10:37.461837",
+      "window_end_utc": "2026-10-23T00:10:49.461837",
+      "hub": {
+        "samples_inside": 12,
+        "max_queue_depth": 0,
+        "cpu_seconds_inside": 0.022,
+        "rx_packets_inside": 94,
+        "path_table_max": 1
+      },
+      "adversary": {
+        "mode": null,
+        "sent": 0,
+        "first_send_utc": null,
+        "last_send_utc": null,
+        "cpu_seconds": null
+      }
+    },
+    {
+      "run": "baseline_20261023T031123Z_1e8a1bc0",
+      "condition": "baseline",
+      "nodes": {
+        "h2": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.5,
+            "latency_p95_ms": 2.7,
+            "latency_max_ms": 3.7,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.15,
+            "latency_p95_ms": 2.9,
+            "latency_max_ms": 3.8,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 38
+        },
+        "h3": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.3,
+            "latency_p95_ms": 2.9,
+            "latency_max_ms": 3.9,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.85,
+            "latency_p95_ms": 3.0,
+            "latency_max_ms": 3.7,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 37
+        }
+      },
+      "window_source": "manifest",
+      "window_start_utc": "2026-10-23T00:11:33.897571",
+      "window_end_utc": "2026-10-23T00:11:45.897571",
+      "hub": {
+        "samples_inside": 12,
+        "max_queue_depth": 0,
+        "cpu_seconds_inside": 0.022,
+        "rx_packets_inside": 94,
+        "path_table_max": 1
+      },
+      "adversary": {
+        "mode": null,
+        "sent": 0,
+        "first_send_utc": null,
+        "last_send_utc": null,
+        "cpu_seconds": null
+      }
+    },
+    {
+      "run": "benign_20261023T031225Z_00165316",
+      "condition": "benign",
+      "nodes": {
+        "h2": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.8,
+            "latency_p95_ms": 2.0,
+            "latency_max_ms": 2.3,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.1,
+            "latency_p95_ms": 3.1,
+            "latency_max_ms": 3.3,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 36
+        },
+        "h3": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.85,
+            "latency_p95_ms": 2.4,
+            "latency_max_ms": 2.5,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.0,
+            "latency_p95_ms": 3.0,
+            "latency_max_ms": 4.2,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 35
+        }
+      },
+      "window_source": "adversary_log",
+      "window_start_utc": "2026-10-23T00:12:36.381333",
+      "window_end_utc": "2026-10-23T00:12:48.413054",
+      "hub": {
+        "samples_inside": 12,
+        "max_queue_depth": 0,
+        "cpu_seconds_inside": 0.055,
+        "rx_packets_inside": 203,
+        "path_table_max": 1
+      },
+      "adversary": {
+        "mode": "benign",
+        "sent": 120,
+        "first_send_utc": "2026-10-23T03:12:36.381333+00:00",
+        "last_send_utc": "2026-10-23T03:12:48.413054+00:00",
+        "cpu_seconds": 0.155
+      }
+    },
+    {
+      "run": "benign_20261023T031322Z_a65aaffb",
+      "condition": "benign",
+      "nodes": {
+        "h2": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.55,
+            "latency_p95_ms": 2.1,
+            "latency_max_ms": 2.1,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.8,
+            "latency_p95_ms": 2.9,
+            "latency_max_ms": 2.9,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 36
+        },
+        "h3": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.75,
+            "latency_p95_ms": 2.9,
+            "latency_max_ms": 3.4,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.9,
+            "latency_p95_ms": 2.7,
+            "latency_max_ms": 3.0,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 35
+        }
+      },
+      "window_source": "adversary_log",
+      "window_start_utc": "2026-10-23T00:13:32.735702",
+      "window_end_utc": "2026-10-23T00:13:44.765968",
+      "hub": {
+        "samples_inside": 12,
+        "max_queue_depth": 0,
+        "cpu_seconds_inside": 0.052,
+        "rx_packets_inside": 203,
+        "path_table_max": 1
+      },
+      "adversary": {
+        "mode": "benign",
+        "sent": 120,
+        "first_send_utc": "2026-10-23T03:13:32.735702+00:00",
+        "last_send_utc": "2026-10-23T03:13:44.765968+00:00",
+        "cpu_seconds": 0.119
+      }
+    },
+    {
+      "run": "unknown_20261023T031423Z_f6a557dd",
+      "condition": "unknown",
+      "nodes": {
+        "h2": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.9,
+            "latency_p95_ms": 3.2,
+            "latency_max_ms": 3.4,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.05,
+            "latency_p95_ms": 3.1,
+            "latency_max_ms": 5.4,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 38
+        },
+        "h3": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.35,
+            "latency_p95_ms": 3.5,
+            "latency_max_ms": 4.1,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.9,
+            "latency_p95_ms": 2.9,
+            "latency_max_ms": 3.4,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 37
+        }
+      },
+      "window_source": "adversary_log",
+      "window_start_utc": "2026-10-23T00:14:33.926355",
+      "window_end_utc": "2026-10-23T00:14:45.960933",
+      "hub": {
+        "samples_inside": 12,
+        "max_queue_depth": 0,
+        "cpu_seconds_inside": 0.042,
+        "rx_packets_inside": 203,
+        "path_table_max": 1
+      },
+      "adversary": {
+        "mode": "unknown",
+        "sent": 120,
+        "first_send_utc": "2026-10-23T03:14:33.926355+00:00",
+        "last_send_utc": "2026-10-23T03:14:45.960933+00:00",
+        "cpu_seconds": 0.183
+      }
+    },
+    {
+      "run": "unknown_20261023T031519Z_a14b6f84",
+      "condition": "unknown",
+      "nodes": {
+        "h2": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.8,
+            "latency_p95_ms": 2.0,
+            "latency_max_ms": 2.9,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.05,
+            "latency_p95_ms": 2.6,
+            "latency_max_ms": 2.7,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 38
+        },
+        "h3": {
+          "inside": {
+            "attempts": 12,
+            "successes": 12,
+            "success_rate": 1.0,
+            "latency_median_ms": 1.75,
+            "latency_p95_ms": 2.1,
+            "latency_max_ms": 2.6,
+            "path_lost_events": 0
+          },
+          "outside": {
+            "attempts": 18,
+            "successes": 18,
+            "success_rate": 1.0,
+            "latency_median_ms": 2.2,
+            "latency_p95_ms": 2.9,
+            "latency_max_ms": 3.3,
+            "path_lost_events": 0
+          },
+          "rx_packets_total": 37
+        }
+      },
+      "window_source": "adversary_log",
+      "window_start_utc": "2026-10-23T00:15:30.206866",
+      "window_end_utc": "2026-10-23T00:15:42.240087",
+      "hub": {
+        "samples_inside": 12,
+        "max_queue_depth": 0,
+        "cpu_seconds_inside": 0.039,
+        "rx_packets_inside": 203,
+        "path_table_max": 1
+      },
+      "adversary": {
+        "mode": "unknown",
+        "sent": 120,
+        "first_send_utc": "2026-10-23T03:15:30.206866+00:00",
+        "last_send_utc": "2026-10-23T03:15:42.240087+00:00",
+        "cpu_seconds": 0.138
+      }
+    }
+  ]
+}

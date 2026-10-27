@@ -1,0 +1,52 @@
+{
+  "condition": "baseline",
+  "repeat_index": 1,
+  "port": 44621,
+  "started_utc": "2026-10-23T02:56:27.539047+00:00",
+  "adversary_mode": null,
+  "adversary_rate_hz": null,
+  "adversary_window_seconds": 12.0,
+  "adversary_start_delay_seconds": 10.0,
+  "honest_duration_seconds": 30.0,
+  "fingerprints": {
+    "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+    "node_app_sha256": "adc6729406a202dc8879d4c433a9c17ed6284892a26ba0c9c8a40c5474a362be",
+    "configs": {
+      "hub": "cffa6952ceaadadbb506bc87ec4728bd21fab85cc317a15aa924e315422bbe1e",
+      "h1": "f163b89129db167cc7549ae13eb6e4d08a892bcb4893e01cb704b05c74da3d93",
+      "h2": "f163b89129db167cc7549ae13eb6e4d08a892bcb4893e01cb704b05c74da3d93",
+      "h3": "f163b89129db167cc7549ae13eb6e4d08a892bcb4893e01cb704b05c74da3d93",
+      "adversary": "f163b89129db167cc7549ae13eb6e4d08a892bcb4893e01cb704b05c74da3d93"
+    }
+  },
+  "hub_listening": true,
+  "announcer_ready": true,
+  "launched_utc": "2026-10-23T02:56:27.942146+00:00",
+  "finished_utc": "2026-10-23T02:57:18.219153+00:00",
+  "processes": {
+    "hub": {
+      "exit_code": 0,
+      "hard_kill": false
+    },
+    "h1": {
+      "exit_code": 0,
+      "hard_kill": false
+    },
+    "h2": {
+      "exit_code": 0,
+      "hard_kill": false
+    },
+    "h3": {
+      "exit_code": 0,
+      "hard_kill": false
+    }
+  },
+  "status": "OK",
+  "files": {
+    "hub": "378b3942bbb3fa403d61e6a7b4623b22b8bda44cee99ca1455cbc066268d2bd7",
+    "h1": "99926c36280e790ee01acef3491ead8abc4a6d7cf46e937556490802c4dc9583",
+    "h2": "25709dc3cc3ae34469de10ad6deeb4703803b4fdd3c0ab2e28e7c1ae7c1ca113",
+    "h3": "08ea01d62010bfac8add029cd7be4e6fb2600553689c6ca70c85a5225097b674",
+    "adversary": null
+  }
+}

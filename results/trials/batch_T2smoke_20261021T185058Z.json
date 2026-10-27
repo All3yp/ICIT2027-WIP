@@ -1,0 +1,68 @@
+{
+  "trial": "T2smoke",
+  "repeats": 1,
+  "probe_once": true,
+  "probe_mode": "fresh",
+  "hardening": "guarded-rtt",
+  "completed_utc": "2026-10-21T18:50:58.155550+00:00",
+  "statuses": [
+    "SERVER_NOT_READY"
+  ],
+  "results": [
+    {
+      "trial": "T2smoke",
+      "repeat_index": 0,
+      "run_dir": "results/trials/T2smoke_20261021T185057Z_5d8635b3",
+      "port": 42600,
+      "started_utc": "2026-10-21T18:50:57.350815+00:00",
+      "probe_once": true,
+      "probe_mode": "fresh",
+      "hardening": "guarded-rtt",
+      "fingerprints": {
+        "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+        "link_lab_sha256": "8b7b442ca67324421b440e33697b50209c2bc4f43c28b887360f0afd1db459d0",
+        "installed_link_py_sha256": "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263",
+        "server_config_sha256": "00850091b32cd1f44092fd6710b32609122db72b1cac81cb659c22404d8fa615",
+        "client_config_sha256": "b1bb81ab0c16b2a3067e71b618386ca1e14b9c764e3364defd6282ab83add17c"
+      },
+      "interpreter": "/home/alley/Code/alley/research/reticulum-icit27/reticulum_research_2026-10-21/.venv/bin/python",
+      "python": "3.13.16",
+      "host": "zephy",
+      "kernel": "6.18.55-2-cachyos-lts",
+      "server_ready": false,
+      "server_ready_seconds": 0.801,
+      "finished_utc": "2026-10-21T18:50:58.155361+00:00",
+      "status": "SERVER_NOT_READY",
+      "client": {
+        "exit_code": null
+      },
+      "server_termination": {
+        "exit_code": 1,
+        "terminated_signal": "SIGINT",
+        "hard_kill": false
+      },
+      "wall_seconds": 0.805,
+      "link_latency_seconds": null,
+      "server_run_ids": [
+        "04c3a157-848c-4606-b1bd-5f1131ea77d4"
+      ],
+      "client_run_ids": [],
+      "client_status_final": null,
+      "client_callback_count": null,
+      "client_active_confirmed": false,
+      "server_established_count": 0,
+      "server_callbacks_by_link": {},
+      "server_link_ids": [],
+      "client_link_ids": [],
+      "correlated_link_ids": [],
+      "probe_sent": false,
+      "replay_injected": false,
+      "hardening_installed": false,
+      "hardening_rtt_rejected": 0,
+      "server_link_closed_events": 0,
+      "client_link_closed_events": 0,
+      "server_callback_states": [],
+      "run_failed_events": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "condition": "baseline",
+  "repeat_index": 0,
+  "port": 44700,
+  "started_utc": "2026-10-23T03:10:27.461837+00:00",
+  "adversary_mode": null,
+  "adversary_rate_hz": null,
+  "adversary_window_seconds": 12.0,
+  "adversary_start_delay_seconds": 10.0,
+  "honest_duration_seconds": 30.0,
+  "connect_stagger_seconds": 2.0,
+  "path_timeout_seconds": 15.0,
+  "fingerprints": {
+    "rns_sdist_sha256": "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879",
+    "node_app_sha256": "c0b1a93a779baa4ef822dff624ab5a4550dc8783b8975a9d13764c2f135ad830",
+    "configs": {
+      "hub": "d7d0d37f29bbe5ef5a875874afd2247f7c98af6622ccf768f530381f31b04c70",
+      "h1": "8e9b117155dae2e8e687f6eb6a8fc8a349396b1a85dd552c297a42b97cb0629f",
+      "h2": "8e9b117155dae2e8e687f6eb6a8fc8a349396b1a85dd552c297a42b97cb0629f",
+      "h3": "8e9b117155dae2e8e687f6eb6a8fc8a349396b1a85dd552c297a42b97cb0629f",
+      "adversary": "8e9b117155dae2e8e687f6eb6a8fc8a349396b1a85dd552c297a42b97cb0629f"
+    }
+  },
+  "hub_listening": true,
+  "announcer_ready": true,
+  "launched_utc": "2026-10-23T03:10:31.866113+00:00",
+  "finished_utc": "2026-10-23T03:11:23.896683+00:00",
+  "processes": {
+    "hub": {
+      "exit_code": 0,
+      "hard_kill": false
+    },
+    "h1": {
+      "exit_code": 0,
+      "hard_kill": false
+    },
+    "h2": {
+      "exit_code": 0,
+      "hard_kill": false
+    },
+    "h3": {
+      "exit_code": 0,
+      "hard_kill": false
+    }
+  },
+  "status": "OK",
+  "files": {
+    "hub": "9e7ad898a6bceff9681a8efc1d6a91115e03f99ade3797b85b2479517610e546",
+    "h1": "20a97ce801d7c7c3b712ddda334bf4b53e8a6faa3ed3b4f967782b4084d8de86",
+    "h2": "d03d91e7454d357c33a27daf349dee7f65d95b5ed6046c0b2b2dd49681a411b7",
+    "h3": "9dfb166a6269f28a614bd26e9b2c58946fd38376c38225a3e12c322c3f9ebb6c",
+    "adversary": null
+  }
+}

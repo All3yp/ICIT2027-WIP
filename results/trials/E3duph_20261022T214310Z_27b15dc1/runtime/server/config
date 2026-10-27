@@ -1,0 +1,10 @@
+[reticulum]
+enable_transport = no
+share_instance = no
+
+[interfaces]
+  [[Research Loopback Server]]
+    type = TCPServerInterface
+    enabled = yes
+    listen_ip = 127.0.0.1
+    listen_port = 42940

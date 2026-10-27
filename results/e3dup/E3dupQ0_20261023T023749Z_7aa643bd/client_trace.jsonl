@@ -1,0 +1,7 @@
+{"t_ns": 146230, "epoch_ns": 1792723069610363654, "event": "trace_installed", "thread": "MainThread", "role": "client"}
+{"t_ns": 419375, "epoch_ns": 1792723069610636799, "event": "tx", "thread": "MainThread", "bytes": 51, "interface": "TCPInterface[Research Loopback Client/127.0.0.1:44204]", "head": "08"}
+{"t_ns": 501345113, "epoch_ns": 1792723070111562537, "event": "tx", "thread": "MainThread", "bytes": 86, "interface": "TCPInterface[Research Loopback Client/127.0.0.1:44204]", "head": "02"}
+{"t_ns": 502581380, "epoch_ns": 1792723070112798804, "event": "tx", "thread": "Thread-5 (inbound_job)", "bytes": 83, "interface": "TCPInterface[Research Loopback Client/127.0.0.1:44204]", "head": "0c"}
+{"t_ns": 502612577, "epoch_ns": 1792723070112830001, "event": "tx", "thread": "Thread-5 (inbound_job)", "bytes": 83, "interface": "TCPInterface[Research Loopback Client/127.0.0.1:44204]", "head": "0c"}
+{"record": "anchor", "role": "client", "epoch_ns": 1792723069610217424, "perf_ns": 13846712151099, "epoch_utc": "2026-10-23T02:37:49"}
+{"t_ns": 3503859927, "epoch_ns": 1792723073114077351, "event": "tx", "thread": "MainThread", "bytes": 99, "interface": "TCPInterface[Research Loopback Client/127.0.0.1:44204]", "head": "0c"}
