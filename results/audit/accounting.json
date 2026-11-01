@@ -1,0 +1,74 @@
+{
+  "total": 219,
+  "main": 165,
+  "mechanism": 54,
+  "status": {
+    "OK": 213,
+    "CLIENT_FAILED": 5,
+    "SERVER_NOT_READY": 1
+  },
+  "by_decision": [
+    {
+      "dataset": "main",
+      "status": "CLIENT_FAILED",
+      "decision": "non-OK:CLIENT_FAILED",
+      "n": 5
+    },
+    {
+      "dataset": "main",
+      "status": "OK",
+      "decision": "preliminary-smoke",
+      "n": 7
+    },
+    {
+      "dataset": "main",
+      "status": "OK",
+      "decision": "reported-condition",
+      "n": 152
+    },
+    {
+      "dataset": "main",
+      "status": "SERVER_NOT_READY",
+      "decision": "non-OK:SERVER_NOT_READY",
+      "n": 1
+    },
+    {
+      "dataset": "mechanism",
+      "status": "OK",
+      "decision": "reported-condition",
+      "n": 54
+    }
+  ],
+  "observed_harness_fingerprints": {
+    "rns_sdist_sha256": [
+      "2bb48232e0a10b59b2b21b60e76592362210cdabd343d7b97a3bf1aba22dd879"
+    ],
+    "installed_link_py_sha256": [
+      "7b2b24c9d12b0f3ecdcf80b4fdee3b8dc5b75b34df51bd8c1c93a0082302d263"
+    ],
+    "link_lab_sha256": [
+      "0f532c482246652871a5b52bd1b9c718f81b18f99bf9348011c2ad146b6f56a1",
+      "290be726389a8035bfaf742475b2bda72228a6fa2ad15612c728fe0053ea553c",
+      "2a6e9891465aa79e92d43f336975db9af553e76750306c58f133178968b473cd",
+      "2c9590328d90850e9482e8f7109366f8e52ce398de5bcea99d5023f30a4fca0a",
+      "4aa99a862a39adc1368f2e8ef545f905fdef34d3b918e25330c2f39d4e99afa4",
+      "5125a78dcf3ca73f27e6051108211002b61dd956b17d0cfc173b9153cb1a0cdd",
+      "786f86b9898cb62d69ccd93c51c88b8dea9ca59deb2b06c56bc7f749a0b3f028",
+      "8052218317c009deb7e7dcb2264e7dda116cf16587334ad08a57286b62d91e47",
+      "8b7b442ca67324421b440e33697b50209c2bc4f43c28b887360f0afd1db459d0",
+      "8fdfcf334ac44aee311539f3f749c60ea4012b2196f3e4c5ea6b63fa6550b3e5",
+      "c583e840681a5073b631d9dafef170acb9ecc895442e98023b16bab6528658a9",
+      "d2334ebf69fb576abeb5761dc4d0bd7c0b0789879d465ae8f4cc4152baecab0e",
+      "dc3541bc5ef5105b76030a51a0225200a74a3efca1893c3bb9b6df65cfe4c504",
+      "e8e2df56d32934134154e6bc8ca3620e5619ae08833a3bd9f1bcd1c75ab54b54",
+      "f63b5a78139bdad3d6c816949cb05e87adfb5d6f7e8b62f7e18ec20ba6a10c59"
+    ],
+    "deep_trace_sha256": [
+      "f43f1058f03260e8b88d2bd48b49351384162451d3b45ee1d14f254456187317"
+    ],
+    "relay_sha256": [
+      "e96d27627bceb1ef359a8b3248441605bbc19e2c96a7c8fe36f95949ea2fc468"
+    ]
+  },
+  "note": "Run inclusion is conditional on OK and non-smoke. All excluded records are retained. The mechanism dataset is distinct from the main dataset."
+}

@@ -72,9 +72,12 @@ def analyse_run(run_dir: Path) -> dict:
         })
 
     window_us = None
+    enqueue_to_commit_us = None
     margin_us = None
-    if len(copies) >= 2 and copies[0]["enqueue_ns"] and copies[0]["hash_commit_ns"]:
-        window_us = round((copies[0]["hash_commit_ns"] - copies[0]["enqueue_ns"]) / 1000.0, 2)
+    if len(copies) >= 2 and copies[0]["filter_ns"] is not None and copies[0]["hash_commit_ns"] is not None:
+        window_us = round((copies[0]["hash_commit_ns"] - copies[0]["filter_ns"]) / 1000.0, 2)
+    if len(copies) >= 2 and copies[0]["enqueue_ns"] is not None and copies[0]["hash_commit_ns"] is not None:
+        enqueue_to_commit_us = round((copies[0]["hash_commit_ns"] - copies[0]["enqueue_ns"]) / 1000.0, 2)
     if len(copies) >= 2 and copies[0]["enqueue_ns"] is not None:
         margin_us = round((copies[1]["filter_ns"] - copies[0]["enqueue_ns"]) / 1000.0, 2)
 
@@ -121,6 +124,7 @@ def analyse_run(run_dir: Path) -> dict:
         "copies": copies,
         "same_recv_burst": same_burst,
         "filter_and_commit_window_us": window_us,
+        "enqueue_to_commit_us": enqueue_to_commit_us,
         "second_filter_margin_us": margin_us,
         "arrival_separation_us": arrival_separation_us,
         "hash_committed_before_second_filter": committed_before_second_filter,
@@ -153,6 +157,7 @@ def summarise(rows: list[dict]) -> dict:
             "emission_separation_us": [member["measured_send_separation_us"] for member in members],
             "arrival_separation_us": [member["arrival_separation_us"] for member in members],
             "window_us": [member["filter_and_commit_window_us"] for member in members],
+            "enqueue_to_commit_us": [member["enqueue_to_commit_us"] for member in members],
             "margin_us": [member["second_filter_margin_us"] for member in members],
         }
     return table

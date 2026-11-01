@@ -423,14 +423,15 @@ def _write_trace_run(root: Path) -> Path:
     return run
 
 
-def test_analyse_e3dup_measures_the_check_to_commit_window(tmp_path):
+def test_analyse_e3dup_separates_filter_and_enqueue_commit_windows(tmp_path):
     import analyse_e3dup
 
     run = _write_trace_run(tmp_path)
     row = analyse_e3dup.analyse_run(run)
     assert row["callbacks_per_link"] == 2
     assert row["lrrtt_frames_observed"] == 2
-    assert row["filter_and_commit_window_us"] == 50.0
+    assert row["filter_and_commit_window_us"] == 60.0
+    assert row["enqueue_to_commit_us"] == 50.0
     assert row["second_filter_margin_us"] == 10.0
     assert row["arrival_separation_us"] == 20.0
     assert row["hash_committed_before_second_filter"] is False
